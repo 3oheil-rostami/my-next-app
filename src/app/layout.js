@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body style={theme ? { backgroundColor: 'darkgray', color: 'black', transition: 'all 1s' } : { backgroundColor: 'black', color: 'white', transition: 'all 1s' }}>
+      <body style={theme ? { backgroundColor: 'white', color: 'black', transition: 'all 1s' } : { backgroundColor: 'black', color: 'white', transition: 'all 1s' }}>
         <div style={{ textAlign: 'center' }}>
         </div>
         {/* <Header onClickk={() => alert('cll')}>Are you sure ? </Header> */}
