@@ -4,3 +4,6 @@ header,footer,section,article {
     margin: 1rem;
     
 }
+a , Link {
+    text-decoration: none;
+}
