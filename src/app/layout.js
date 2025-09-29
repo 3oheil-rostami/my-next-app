@@ -53,3 +53,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+// Next js
+// React Native
+// TypeScript
