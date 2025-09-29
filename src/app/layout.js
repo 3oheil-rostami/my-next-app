@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   const pathname = usePathname()
 
 
-  const [family, setFamily] = useState('family')
+  const [family, setFamily] = useState('Rostami')
   const [name, setName] = useState('Soheil')
   const hideFooter = ['/dashboard']
 
