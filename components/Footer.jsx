@@ -3,8 +3,11 @@ import React, { useContext } from 'react'
 
 export default function Footer() {
 
-  const {theme , name} = useContext(ThemContext)
-  console.log(theme)
+  const {theme , name , family} = useContext(ThemContext)
+  // console.log(family)
+  // console.log(theme)
+  console.log(name)
+  console.log(family)
   return (
     <footer style={{textAlign:'center'}}>
       {/* <h2>My Footer</h2> */}
@@ -19,6 +22,9 @@ export default function Footer() {
        
       </a>
       <h2>{name}</h2>
+      {/* <h2>{family}</h2> */}
+      <h2>{family}</h2>
+      
       
     </footer>
 
