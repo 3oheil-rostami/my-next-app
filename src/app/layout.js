@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
 
   const [family, setFamily] = useState('Rostami')
   const [name, setName] = useState('Soheil')
+  const [email , setEmail] = useState('soheilrotami023@gmail.com')
   const hideFooter = ['/dashboard']
 
   const shouldHideFooter = hideFooter.includes(pathname)
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <ThemContext.Provider value={{ family, theme, name }}>
+      <ThemContext.Provider value={{email , family, theme, name }}>
         <body style={theme ? { backgroundColor: 'white', color: 'black', transition: 'all 1s' } : { backgroundColor: 'black', color: 'white', transition: 'all 1s' }}>
           <div style={{ textAlign: 'center' }}>
           </div>
