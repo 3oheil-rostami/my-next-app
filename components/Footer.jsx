@@ -12,7 +12,7 @@ export default function Footer() {
     <footer style={{ textAlign: 'center' }}>
       {/* <h2>My Footer</h2> */}
       <h2>جهت رزرو پیام دهید</h2>
-      <a
+      <a style={{border:'none'}}
         href="https://wa.me/+9809385514302"
         target="_blank"
         rel="noopener noreferrer"
