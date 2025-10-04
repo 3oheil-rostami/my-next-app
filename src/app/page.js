@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
-
+// import '../../styles/button.module.css'
+import styles from '../../styles/button.module.css'
 export default function Home() {
 
   const [num, setNum] = useState(0)
@@ -18,7 +19,7 @@ export default function Home() {
 
       <h1>{num}</h1>
 
-      <h2>Home Page</h2>
+      <h2 className={styles.headers}>Home Page</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae commodi beatae cumque quas repellat! Perspiciatis, animi sapiente praesentium qui soluta assumenda quia, ex nihil quibusdam illum totam! Enim, iusto.</p>
 
 

@@ -3,7 +3,7 @@ import React from 'react'
 export default function myRes() {
   return (
     <div>
-      <h2>rrrr</h2>
+      <h2>رزومه های من</h2>
     </div>
   )
 }
