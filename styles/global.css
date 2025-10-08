@@ -12,6 +12,6 @@ a , Link {
     color: white;
     transform: scale(1.2);
     border-bottom: 1px solid;
-
+    color: rgb(65, 96, 245);
     transition: all 1s;
 }

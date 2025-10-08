@@ -2,7 +2,7 @@ import { ThemContext } from '@/app/layout'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useContext } from 'react'
-
+import LinkComponent from 'utils/link'
 export default function Sidbar() {
 
   const { theme } = useContext(ThemContext)
@@ -15,6 +15,7 @@ export default function Sidbar() {
     { href: '/dashboard/setting', lable: 'Setting' },
   ]
   console.log(pathname)
+
   return (
     <div>
       <aside style={{ margin: '10px', padding: '10px', border: '1px solid', height: '85%', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
@@ -33,6 +34,7 @@ export default function Sidbar() {
                 </Link>
               ))}
 
+         <LinkComponent url={'https://www.google.com'} label='Google' target={"_blank"}/>
           </ul>
         </menu>
       </aside>

@@ -4,10 +4,7 @@ import React, { useContext } from 'react'
 export default function Footer() {
 
   const { theme, name, family, email } = useContext(ThemContext)
-  // console.log(family)
-  // console.log(theme)
-  console.log(name)
-  console.log(family)
+  
   return (
     <footer style={{ textAlign: 'center' }}>
       {/* <h2>My Footer</h2> */}

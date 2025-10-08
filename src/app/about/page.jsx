@@ -1,10 +1,12 @@
 "use client"; // چون از state و useEffect استفاده می‌کنیم
 
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function About() {
   const [time, setTime] = useState("");
   const [num , setNum] = useState(0)
+
 
   useEffect(() => {
     const addNum = setInterval(() => {
