@@ -9,11 +9,14 @@ export default function Sidbar() {
   const pathname = usePathname()
   const links = [
     { href: '/', lable: 'Home' },
-    { href: '/contact', lable: 'Contact' },
+    { href: '/users', lable: 'Users' },
     { href: '/about', lable: 'About' },
     { href: '/dashboard', lable: 'Dashboard' },
     { href: '/dashboard/setting', lable: 'Setting' },
+    { href: '/posts', lable: 'Posts' },
+    { href: '/albums', lable: 'Albums' }
   ]
+  
   console.log(pathname)
 
   return (

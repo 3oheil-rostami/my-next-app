@@ -1,10 +1,19 @@
-import Main from 'layot/Main'
-import React from 'react'
+import axios from "axios"
 
-export default function page() {
+
+export default async function page() {
+
+   const {data : user} = await axios('https://jsonplaceholder.typicode.com/users/1', {
+    cache: 'no-store', // مثل getServerSideProps
+  });
+  console.log(user)
+
   return (
-    <Main>
+
+    <div>
       <h1>Blog 1</h1>
-    </Main>
+      <h2>{user.name}</h2>
+    </div>
+
   )
 }
