@@ -13,14 +13,12 @@ export default function RootLayout({ children }) {
   const inputRef = useRef()
   const pathname = usePathname()
 
-
   const [family, setFamily] = useState('Rostami')
   const [name, setName] = useState('Soheil')
   const [email , setEmail] = useState('soheilrotami023@gmail.com')
   const hideFooter = ['/dashboard']
 
   const shouldHideFooter = hideFooter.includes(pathname)
-
 
   const themClick = () => {
     setTheme(!theme)
@@ -34,11 +32,10 @@ export default function RootLayout({ children }) {
           </div>
           {/* <Header onClickk={() => alert('cll')}>Are you sure ? </Header> */}
           <Header > </Header>
-
+    
           <div style={{ textAlign: 'center' }}>
-            <button onClick={themClick}>{theme ? 'Light' : 'Dark'}</button>
-
-          </div>
+            <button style={{fontSize:'1.3remf'}} onClick={themClick}>{theme ? 'Light' : 'Dark'}</button>
+        </div>
           <section style={{ display: 'flex' }}>
             <Sidbar />
             <article>
@@ -46,7 +43,6 @@ export default function RootLayout({ children }) {
 
             </article>
           </section>
-
 
           {!shouldHideFooter && <Footer />}
 
