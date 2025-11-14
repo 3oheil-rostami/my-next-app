@@ -1,11 +1,11 @@
 'use client';
 
-import { createContext, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { createContext, useRef, useState } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Sidbar from "../../components/Sidbar";
-import { usePathname } from "next/navigation";
-import '../../styles/global.css'
+import '../../styles/global.css';
 export const ThemContext = createContext()
 
 export default function RootLayout({ children }) {

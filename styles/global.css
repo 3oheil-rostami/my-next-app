@@ -4,6 +4,11 @@ header,footer,section,article {
     margin: 1rem;
     
 }
+body {
+     overflow-x: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+}
 a , Link {
     text-decoration: none;
     color: green
