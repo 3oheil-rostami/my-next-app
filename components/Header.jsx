@@ -27,7 +27,6 @@ export default function Header({ onClickk, children }) {
       <Show />
       <header style={{ textAlign: 'center', padding: '2rem' }}>
         <div style={{ display: 'flex', alignContent: "space-around", justifyContent: "space-between" }}>
-
           <h2> ساعت فعلی: {time} ⏰</h2>
           {/* <img style={{width:'5rem'}} src={'./images/download.png'} alt="" /> */}
           {/* <Image src={'./images/logo.png'} width={200} height={100}/> */}
