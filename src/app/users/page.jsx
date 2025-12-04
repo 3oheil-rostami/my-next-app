@@ -9,7 +9,10 @@ export default async function Contact() {
     cache: 'no-store', // مثل getServerSideProps
   });
 
-  
+
+console.log('Hi')
+console.log(users)
+// console.log(data)
 
 
 
